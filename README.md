@@ -30,5 +30,3 @@ While our main goal with SpotiN is to provide a local cuisine Tour Guide and pla
 Here in SpotiN, we want to provide you with the most immersive experience as humanly possible. We want to take away the hassle of planning and looking around the internet for insight on possible locations. Why should you spend your time and energy on research when you should spend it on creating what can be some of the best memories of your life.
 
 Sinceraly, SpotiN Team
-
-This is develop
