@@ -21,7 +21,7 @@ android:
    # - extra-android-m2repository
    # - addon-google_apis-google-19
 
-script: ./gradlew clean check --stacktrace
+script: ./gradlew clean check
    
 notifications:
    email: false
