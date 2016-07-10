@@ -1,5 +1,5 @@
-#Build
-https://travis-ci.org/gabrielnieves18/bmgdevelopment-spotin.svg?branch=master
+#Build Status
+<img src="https://travis-ci.org/gabrielnieves18/bmgdevelopment-spotin.svg?branch=master">
 
 #spotin
 SpotiN is an immersive, local restaurant guide application with social-media-like features.
