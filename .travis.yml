@@ -4,7 +4,6 @@ sudo: false
 
 android:
   components:
-   # Uncomment the lines below if you want to
    # use the latest revision of Android SDK Tools
    - platform-tools
    - tools
@@ -21,7 +20,9 @@ android:
    # - extra-android-m2repository
    # - addon-google_apis-google-19
 
-script: ./gradlew build connectedCheck
+script:
+   - ls -all
+   - ./gradlew build connectedCheck
    
 notifications:
    email: false
