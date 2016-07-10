@@ -18,7 +18,8 @@ public class ExampleUnitTest2 {
 
     @Test
     public void myname_isNotCorrect() throws Exception {
-        assertArrayEquals("Gabriel".toCharArray(), "Gabriel".toCharArray());
+        assertArrayEquals("Gabriel".toCharArray(), "GabrieL".toCharArray());
+        assertArrayEquals("Gabriel".toCharArray(), "GabrieL".toCharArray());
     }
 
 }
