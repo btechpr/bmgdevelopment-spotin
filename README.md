@@ -1,7 +1,7 @@
 #Build Status
 <img src="https://travis-ci.org/gabrielnieves18/bmgdevelopment-spotin.svg?branch=master">
 
-#spotin
+#SpotiN
 SpotiN is an immersive, local restaurant guide application with social-media-like features.
 
 Our main goal is to help you locate the most delicious and authentic cuisine from local restaurants around Puerto Rico.
