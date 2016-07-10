@@ -14,35 +14,17 @@ android:
    # Additional components
    - extra-android-support
    - extra-android-m2repository
-   # - extra-google-google_play_services
-    #- extra-google-m2repository
-    #- addon-google_apis-google-23
-   # Emulators for test
-    #- sys-img-armeabi-v7a-android-21
-    #- sys-img-x86-android-21
 before_cache:
    - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
 cache:
   directories:
     - $HOME/.gradle/caches/
     - $HOME/.gradle/wrapper/
-   
 before_install:
   - pip install --user codecov
 script:
-   #- ./gradlew build jacocoTestReport assembleAndroidTest
    - ./gradlew check --continue --stacktrace
-after_script:
-  # print lint results details
-  - for f in app/build/outputs/lint-results.html; do pandoc $f -t plain; done
-  - for f in data/build/outputs/lint-results.html; do pandoc $f -t plain; done
-   
 after_success:
   - bash <(curl -s https://codecov.io/bash)
-  #- ./gradlew jacocoFullReport --continue --stacktrace
-  #- codecov
-after_failure:
-  - pandoc builder/build/reports/tests/index.html -t plain | sed -n '/^Failed tests/,/default-package/p'
-   
 notifications:
    email: false
