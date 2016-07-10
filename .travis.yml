@@ -30,16 +30,17 @@ cache:
 before_install:
   - pip install --user codecov
 script:
+   - ./gradlew build jacocoTestReport assembleAndroidTest
    - ./gradlew check -PdisablePreDex --continue --stacktrace
-   - ./gradlew test -PdisablePreDex --continue --stacktrace
 after_script:
   # print lint results details
   - for f in app/build/outputs/lint-results.html; do pandoc $f -t plain; done
   - for f in data/build/outputs/lint-results.html; do pandoc $f -t plain; done
    
 after_success:
-  - ./gradlew jacocoFullReport --continue --stacktrace
-  - codecov
+  - bash <(curl -s https://codecov.io/bash)
+  #- ./gradlew jacocoFullReport --continue --stacktrace
+  #- codecov
 after_failure:
   - pandoc builder/build/reports/tests/index.html -t plain | sed -n '/^Failed tests/,/default-package/p'
    
