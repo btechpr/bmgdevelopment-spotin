@@ -1,4 +1,5 @@
 #Build Status
+
 <img src="https://travis-ci.org/gabrielnieves18/bmgdevelopment-spotin.svg?branch=master">
 
 #SpotiN
