@@ -1,5 +1,5 @@
 language: android
-jdk: oraclejdk7
+jdk: oraclejdk8
 
 android:
   components:
@@ -20,6 +20,6 @@ android:
    # - extra-android-m2repository
    # - addon-google_apis-google-19
 
-script:
-   - gradle build connectedCheck
-   - ./gradlew build connectedCheck
+#script:
+   #- gradle build connectedCheck
+   #- ./gradlew build connectedCheck
