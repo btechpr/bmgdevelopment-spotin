@@ -1,6 +1,4 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
-apply plugin: 'checkstyle'
-
 buildscript {
     repositories {
         mavenCentral()
@@ -13,6 +11,15 @@ buildscript {
         // in the individual module build.gradle files
     }
 }
+
+plugins {
+    id 'checkstyle'
+    id 'net.saliman.cobertura' version '2.3.1'
+    id 'com.github.kt3k.coveralls' version '2.6.3'
+}
+
+cobertura.coverageFormats = ['html', 'xml'] // coveralls plugin depends on xml format report
+
 
 allprojects {
     repositories {
