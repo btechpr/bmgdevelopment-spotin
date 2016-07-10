@@ -21,10 +21,7 @@ android:
    # - extra-android-m2repository
    # - addon-google_apis-google-19
 
-script:
-   - gradle build connectedCheck
-   - ./gradlew build connectedCheck
-   # - ./gradlew build connectedAndroidTest
+script: ./gradlew clean check
    
 notifications:
    email: false
