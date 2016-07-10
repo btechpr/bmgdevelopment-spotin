@@ -2,6 +2,8 @@
 
 <img src="https://travis-ci.org/gabrielnieves18/bmgdevelopment-spotin.svg?branch=master">
 
+[![Code Coverage](https://img.shields.io/codecov/c/github/pvorb/property-providers/develop.svg)](https://codecov.io/github/pvorb/property-providers?branch=develop)
+
 #SpotiN
 SpotiN is an immersive, local restaurant guide application with social-media-like features.
 
