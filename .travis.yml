@@ -30,7 +30,7 @@ cache:
 before_install:
   - pip install --user codecov
 script:
-   - ./gradlew build jacocoTestReport assembleAndroidTest
+   #- ./gradlew build jacocoTestReport assembleAndroidTest
    - ./gradlew check --continue --stacktrace
 after_script:
   # print lint results details
