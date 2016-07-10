@@ -8,7 +8,7 @@ Our main goal is to help you locate the most delicious and authentic cuisine fro
 
 This application will aid the small local business to get some exposure on the trending mobile industry by providing them a place within our applications for FREE. This includes server space, IT support and adequate positioning within the query searches in our mobile applications.
 
-Our team consists of three individuals, all born and raised in la "Isla del Encanto" Puerto Rico.
+Our team consists of four individuals, all born and raised in la "Isla del Encanto" Puerto Rico.
 We know the Island in and Out. And its time that the world got to know her as well.
 
 So come on and join us in our efforts to save the local commerce, one meal at a time!
