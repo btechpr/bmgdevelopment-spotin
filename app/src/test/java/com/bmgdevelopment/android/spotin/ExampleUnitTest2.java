@@ -13,12 +13,12 @@ import static org.junit.Assert.assertArrayEquals;
 public class ExampleUnitTest2 {
 
     @Test
-    public void myname_isCorrect() throws Exception {
+    public void myname_isCorrect() {
         assertArrayEquals("Gabriel".toCharArray(), "Gabriel".toCharArray());
     }
 
     @Test
-    public void myname_isNotCorrect() throws Exception {
+    public void myname_isNotCorrect() {
         assertArrayEquals("Gabriel".toCharArray(), "GabrieL".toCharArray());
     }
 
