@@ -20,6 +20,4 @@ android:
    # - extra-android-m2repository
    # - addon-google_apis-google-19
 
-#script:
-   #- gradle build connectedCheck
-   #- ./gradlew build connectedCheck
+script: ./gradlew build connectedCheck
