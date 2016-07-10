@@ -6,6 +6,4 @@ android:
     - build-tools-24.0.0
 
 script:
-    - echo "Travis branch is $TRAVIS_BRANCH"
-    - echo "Travis branch is in pull request $TRAVIS_PULL+REQUEST"
-    - mvn clean install -P 'guice'
+    - echo "Hello World"
