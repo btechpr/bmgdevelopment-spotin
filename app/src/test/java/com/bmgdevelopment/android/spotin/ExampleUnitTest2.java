@@ -19,7 +19,7 @@ public class ExampleUnitTest2 {
 
     @Test
     public void myname_isNotCorrect() {
-        assertArrayEquals("Gabriel".toCharArray(), "GabrieL".toCharArray());
+        assertArrayEquals("Gabriel".toCharArray(), "Gabriel".toCharArray());
     }
 
 }
