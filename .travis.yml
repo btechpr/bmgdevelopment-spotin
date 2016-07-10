@@ -60,8 +60,19 @@ script:
    - ./gradlew check -PdisablePreDex --continue --stacktrace
    - android-wait-for-emulator
    - adb devices
-   - adb shell input keyevent 82 &amp;
+   - adb shell input keyevent 82 &;
    - ./gradlew connectedAndroidTest -PdisablePreDex --continue --stacktrace
+after_script:
+  # print lint results details
+  - for f in app/build/outputs/lint-results.html; do pandoc $f -t plain; done
+  - for f in data/build/outputs/lint-results.html; do pandoc $f -t plain; done
+   
+after_success:
+  - ./gradlew jacocoFullReport
+  - bash <(curl -s https://codecov.io/bash)
+  - codecov
+after_failure:
+  - pandoc builder/build/reports/tests/index.html -t plain | sed -n '/^Failed tests/,/default-package/p'
    
 notifications:
    email: false
