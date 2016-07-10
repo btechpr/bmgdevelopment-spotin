@@ -1,7 +1,4 @@
 README.md
-
-
-.gradle
 .DS_Store
 
 # built application files
@@ -37,7 +34,6 @@ project.properties
 # idea project files
 .idea/
 .idea/.name
-.idea/misc.xml
 *.iml
 *.ipr
 *.iws

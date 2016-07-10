@@ -1,6 +1,7 @@
 #Build Status
 
-<img src="https://travis-ci.org/gabrielnieves18/bmgdevelopment-spotin.svg?branch=master">
+<img src="https://travis-ci.org/gabrielnieves18/bmgdevelopment-spotin.svg?branch=develop"> <a href='https://coveralls.io/github/gabrielnieves18/bmgdevelopment-spotin?branch=master'><img src='https://coveralls.io/repos/github/gabrielnieves18/bmgdevelopment-spotin/badge.svg?branch=master' alt='Coverage Status' /></a>
+
 
 #SpotiN
 SpotiN is an immersive, local restaurant guide application with social-media-like features.
