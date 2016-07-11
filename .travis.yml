@@ -24,6 +24,6 @@ script:
    - ./gradlew clean --continue --stacktrace
    - ./gradlew check --continue --stacktrace
 after_success:
-   - ./gradlew cobertura coveralls
+   - ./gradlew jacocoTestReport coveralls
 notifications:
    email: false
