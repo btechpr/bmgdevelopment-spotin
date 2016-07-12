@@ -6,28 +6,17 @@ import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
+
 /**
  * Created by gabrielnieves18 on 07-12-16.
  */
 public class TestBuildConfig {
 
-    @Test
-    public void buildConfDebug_isTrue() {
-        assertTrue(BuildConfig.DEBUG);
-    }
-
-    @Test
+  @Test
     public void buildConfAppId_isCorrect() {
         assertArrayEquals(
                 BuildConfig.APPLICATION_ID.toCharArray(),
                 "com.bmgdevelopment.android.spotin".toCharArray());
-    }
-
-    @Test
-    public void buildConfBuilType_isCorrect() {
-        assertArrayEquals(
-                BuildConfig.BUILD_TYPE.toCharArray(),
-                "debug".toCharArray());
     }
 
     @Test
